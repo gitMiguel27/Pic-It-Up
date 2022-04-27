@@ -1,0 +1,24 @@
+.navbar {
+    /* background-color: #edeaea; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    padding-top: 4em;
+}
+
+.navbar-links > * {
+    /* background-color: #edeaea; */
+    color: aqua !important;
+    text-decoration: none;
+    margin: 0;
+    padding: 1em;
+    font-size: large;
+}
+
+.typical-logo {
+    font-family: monospace;
+    font-size: xx-large;
+    color: aqua;
+}

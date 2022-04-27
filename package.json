@@ -11,6 +11,7 @@
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
   },
   "dependencies": {
-    "piexifjs": "^1.0.4"
+    "piexifjs": "^1.0.4",
+    "react-router-dom": "^6.3.0"
   }
 }
