@@ -5,11 +5,13 @@
 }
 
 .navbar-links {
-    padding-top: 4em;
+    padding-top: 2.5em;
 }
 
 .navbar-links > * {
-    /* background-color: #edeaea; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
+
     color: aqua !important;
     text-decoration: none;
     margin: 0;
@@ -18,7 +20,8 @@
 }
 
 .typical-logo {
-    font-family: monospace;
-    font-size: xx-large;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
+    font-size: x-large;
     color: aqua;
 }
