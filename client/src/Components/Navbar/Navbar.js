@@ -4,6 +4,7 @@ import Typical from 'react-typical';
 import './Navbar.css'
 
 function Navbar() {
+
     return (
         <nav className="navbar">
             <div className='logo-container'>
@@ -28,12 +29,13 @@ function Navbar() {
                 </p>
             </div>
             <div className= "navbar-links">
-                <NavLink to="/home">Home</NavLink>
-                <NavLink to="/challenges">Challenges</NavLink>
-                <NavLink to="/pic-it-up-101">Pic-It-Up 101</NavLink>
-                <NavLink to="/feed">Feed</NavLink>
-                <NavLink to="/leaderboard">Leaderboard</NavLink>
-                <NavLink to="/login">Login</NavLink>
+                <NavLink activeClassName="active" to="/home">Home</NavLink>
+                <NavLink activeClassName="active" to="/challenges">Challenges</NavLink>
+                <NavLink activeClassName="active" to="/pic-it-up-101">Pic-It-Up 101</NavLink>
+                <NavLink activeClassName="active" to="/feed">Feed</NavLink>
+                <NavLink activeClassName="active" to="/leaderboard">Leaderboard</NavLink>
+                <NavLink activeClassName="active" to="/login">Login</NavLink>
+                {/* use state for to and content */}
             </div>
         </nav>
     )

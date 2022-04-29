@@ -1,5 +1,5 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :image, :date
+  attributes :image, :date
   has_one :user
-  has_one :challenge
+  # has_one :challenge
 end

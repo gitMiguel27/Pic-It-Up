@@ -11,12 +11,19 @@
 .navbar-links > * {
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-family: 'Bungee', cursive;
-
-    color: aqua !important;
+    color: white;
     text-decoration: none;
     margin: 0;
     padding: 1em;
     font-size: large;
+}
+
+.navbar-links > *:hover {
+    color: aqua;
+}
+
+.active {
+    color: aqua;
 }
 
 .typical-logo {
