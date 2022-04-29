@@ -1,14 +1,11 @@
 import React from "react";
-import Navbar from '../Navbar/Navbar';
-import Footer from "../Footer/Footer";
 import './Home.css';
 
 
 function Home() {
     return (
-        <div className="page-container">
-            <div className="content-wrap">
-                <Navbar/>
+        <div>
+            <div>
                 <div className="sections-container">
                     <div className="home-header">
                         <h1>Welcome to Pic-It-Up <br/> In Queens</h1>
@@ -27,7 +24,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
