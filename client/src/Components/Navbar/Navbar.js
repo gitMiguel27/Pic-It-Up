@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Typical from 'react-typical';
 import './Navbar.css'
 
-function Navbar() {
+function Navbar({ user }) {
 
     return (
         <nav className="navbar">
@@ -29,12 +29,12 @@ function Navbar() {
                 </p>
             </div>
             <div className= "navbar-links">
-                <NavLink activeClassName="active" to="/home">Home</NavLink>
-                <NavLink activeClassName="active" to="/challenges">Challenges</NavLink>
-                <NavLink activeClassName="active" to="/pic-it-up-101">Pic-It-Up 101</NavLink>
-                <NavLink activeClassName="active" to="/feed">Feed</NavLink>
-                <NavLink activeClassName="active" to="/leaderboard">Leaderboard</NavLink>
-                <NavLink activeClassName="active" to="/login">Login</NavLink>
+                <NavLink activeClassName="active" to='/home'>Home</NavLink>
+                <NavLink activeClassName="active" to='/challenges'>Challenges</NavLink>
+                <NavLink activeClassName="active" to='/pic-it-up-101'>Pic-It-Up 101</NavLink>
+                <NavLink activeClassName="active" to='/feed'>Feed</NavLink>
+                <NavLink activeClassName="active" to='/leaderboard'>Leaderboard</NavLink>
+                <NavLink activeClassName="active" to={user != null ? '/mypage' : '/login'}>{user != null ? "My Page" : "Login"}</NavLink>
                 {/* use state for to and content */}
             </div>
         </nav>

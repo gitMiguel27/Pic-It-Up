@@ -1,0 +1,55 @@
+.picitup101 {
+    min-height: 100vh;
+}
+
+#picitup101-title {
+    text-align: center;
+}
+
+.rules-section {
+    text-align: left;
+}
+
+#rules-list {
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 64.5em;
+}
+
+.rule p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.warnings-section {
+    text-align: left;
+}
+
+#warnings-list {
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 64.5em;
+}
+
+.warning p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.advice-section {
+    text-align: left;
+}
+
+#advice-list {
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 64.5em;
+}
+
+.advice p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}

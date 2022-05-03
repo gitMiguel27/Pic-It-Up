@@ -1,0 +1,11 @@
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#mypage-profile-pic {
+    width: 25em;
+    height: auto;
+    clip-path: circle();
+}

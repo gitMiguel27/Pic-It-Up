@@ -32,7 +32,7 @@ function SubmitPhoto() {
     
     
       return (
-        <div>
+        <div className="submitphoto">
           <form onSubmit={handleSubmit}>
             <label>
               Upload File:

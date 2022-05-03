@@ -58,7 +58,7 @@ function Signup({ setUser }) {
 
 
     return (
-        <>
+        <div className="signup">
             <div className='account-form-container'>
                 <h3> Create An Account </h3>
                 <form onSubmit={handleSubmit}> 
@@ -115,7 +115,7 @@ function Signup({ setUser }) {
                     <input className='submit' type="submit" value="Submit" />
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 

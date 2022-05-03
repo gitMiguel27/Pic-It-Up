@@ -5,6 +5,11 @@ import Login from '../Login/Login';
 import Signup from '../Signup/Signup';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import MyPage from '../MyPage/MyPage';
+import Challenges from '../Challenges/Challenges';
+import PicItUp101 from '../PicItUp101/PicItUp101';
+import Feed from '../Feed/Feed';
+import Leaderboard from '../Leaderboard/Leaderboard';
 import './App.css';
 
 function App() {
@@ -21,21 +26,27 @@ function App() {
 
   return (
     <div className='app'>
-      <Navbar />
-      <div className="page-container">
-        <div className="content-wrap">
-          <Routes>
-            <Route exact path='/' element={<Home />}>
-            </Route>
-            <Route path='/home' element={<Home />}>
-            </Route>
-            <Route path='/login' element={<Login setUser={setUser}/>}>
-            </Route>
-            <Route path='/signup' element={<Signup setUser={setUser}/>}>
-            </Route>
-          </Routes>
-        </div>
-      </div>
+      <Navbar user={user}/>
+        <Routes>
+          <Route exact path='/' element={<Home />}>
+          </Route>
+          <Route path='/home' element={<Home />}>
+          </Route>
+          <Route path='/challenges' element={<Challenges />}>
+          </Route>
+          <Route path='/pic-it-up-101' element={<PicItUp101 />}>
+          </Route>
+          <Route path='/feed' element={<Feed />}>
+          </Route>
+          <Route path='/leaderboard' element={<Leaderboard />}>
+          </Route>
+          <Route path='/login' element={<Login setUser={setUser}/>}>
+          </Route>
+          <Route path='/signup' element={<Signup setUser={setUser}/>}>
+          </Route>
+          <Route path='/mypage' element={<MyPage user={user}/>}>
+          </Route>
+        </Routes>
       <Footer/>
     </div>
   );

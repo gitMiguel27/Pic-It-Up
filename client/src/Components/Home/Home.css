@@ -1,12 +1,6 @@
-/* .page-container {
-    display: flex;
-    flex-direction: column;
+.home {
     min-height: 100vh;
 }
-
-.content-wrap {
-    flex: 1;
-} */
 
 h1 {
     color: rgb(255, 255, 255);
@@ -18,10 +12,13 @@ h1 {
     text-align: center;
 }
 
-#announcements p {
-    font-size: 1.25em;
+#announcement-list {
     background: rgba(255, 255, 255, 0.15);
-    max-width: 50.5em;
+    max-width: 64.5em;
+}
+
+.announcement p {
+    font-size: 1.25em;
     line-height: 1.75em;
     padding-left: 0.5em;
     padding-right: 0.5em;
