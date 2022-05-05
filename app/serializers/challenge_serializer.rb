@@ -1,3 +1,3 @@
 class ChallengeSerializer < ActiveModel::Serializer
-  attributes :image, :location, :latitude, :longitude, :hint, :difficulty
+  attributes :id, :image, :location, :latitude, :longitude, :hint, :difficulty
 end

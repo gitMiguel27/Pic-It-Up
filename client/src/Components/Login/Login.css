@@ -2,22 +2,31 @@
     min-height: 100vh;
 }
 
+.login h1 {
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
+}
+
 .login-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 50em;
+    max-width: 25%;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     height: 55em;
 }
 
-form {
+.login-form-container h1 {
+    text-align: center;
+}
+
+.login-form-container form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    width: 15em;
+    width: 50%;
 }
 
 #signup-text {

@@ -19,16 +19,19 @@
 }
 
 .navbar-links > *:hover {
-    color: aqua;
+    /* color: rgb(94, 43, 43); */
+    color: black;
 }
 
 .active {
-    color: aqua;
+    /* color: rgb(94, 43, 43); */
+    color: black;
 }
 
 .typical-logo {
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-family: 'Bungee', cursive;
     font-size: x-large;
-    color: aqua;
+    /* color: rgb(94, 43, 43); */
+    color: black;
 }

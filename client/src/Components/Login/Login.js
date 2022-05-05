@@ -43,12 +43,13 @@ function Login({ setUser }) {
     return (
         <div className="login">
             <div className="login-form-container">
+                <h1>Welcome,<br/>Login Below</h1>
                 <form onSubmit={handleLogin}>
                     <input type="username" name="username" placeholder="username..." required value={loginData.username} onChange={handleChange}/>
                     <input type="password" name="password" placeholder="password..." required value={loginData.password} onChange={handleChange}/>
                     <button>Login</button>
                 </form>
-                <p id="signup-text">Don't have an account?<br/><a href="http://localhost:4000/signup">Signup</a></p> 
+                <h3 id="signup-text">Don't have an account?<br/><a href="http://localhost:4000/signup">Signup</a></h3> 
             </div>
         </div>
     )

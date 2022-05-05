@@ -34,7 +34,7 @@ function Navbar({ user }) {
                 <NavLink activeClassName="active" to='/pic-it-up-101'>Pic-It-Up 101</NavLink>
                 <NavLink activeClassName="active" to='/feed'>Feed</NavLink>
                 <NavLink activeClassName="active" to='/leaderboard'>Leaderboard</NavLink>
-                <NavLink activeClassName="active" to={user != null ? '/mypage' : '/login'}>{user != null ? "My Page" : "Login"}</NavLink>
+                <NavLink activeClassName="active" to={user !== null ? '/mypage' : '/login'}>{user !== null ? "My Page" : "Login"}</NavLink>
                 {/* use state for to and content */}
             </div>
         </nav>

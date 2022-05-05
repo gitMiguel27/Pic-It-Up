@@ -4,6 +4,12 @@
     justify-content: left;
 }
 
+.profile-card h1 {
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
+}
+
 #mypage-profile-pic {
     width: 25em;
     height: auto;

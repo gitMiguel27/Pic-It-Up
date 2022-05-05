@@ -4,15 +4,21 @@
 
 #picitup101-title {
     text-align: center;
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
 }
 
 .rules-section {
     text-align: left;
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
 }
 
 #rules-list {
-    background: rgba(255, 255, 255, 0.15);
-    max-width: 64.5em;
+    background: rgba(255, 255, 255, 0.2);
+    max-width: 49%;
 }
 
 .rule p {
@@ -24,11 +30,14 @@
 
 .warnings-section {
     text-align: left;
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
 }
 
 #warnings-list {
-    background: rgba(255, 255, 255, 0.15);
-    max-width: 64.5em;
+    background: rgba(255, 255, 255, 0.2);
+    max-width: 49%;
 }
 
 .warning p {
@@ -40,11 +49,14 @@
 
 .advice-section {
     text-align: left;
+    color: rgb(255, 255, 255);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Bungee', cursive;
 }
 
 #advice-list {
-    background: rgba(255, 255, 255, 0.15);
-    max-width: 64.5em;
+    background: rgba(255, 255, 255, 0.2);
+    max-width: 49%;
 }
 
 .advice p {

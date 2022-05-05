@@ -1,14 +1,22 @@
 puts '🌱 Seeding Users...'
 
-miguel = User.create(full_name: "Miguel Nazario", username: "duhitz_miguel", email: "mnazario@gmail.com", password: "miggy123", profile_pic: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/46507516_1863997593721734_1455489740018024448_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=L9iUhJdltfkAX_moQri&_nc_ht=scontent-lga3-1.xx&oh=00_AT_4LZivYZpu0ok0sgZ8i1DnQL1hOzeYI-uc1E-mlmx0yA&oe=6293B12B", followers: 299)
-#  = User.create(full_name: "", username: "", email: "", password_digest: "", profile_pic: "", followers: )
+miguel = User.create(full_name: "Miguel Nazario", username: "duhitz_miguel", email: "mnazario@gmail.com", password: "miggy123", profile_pic: "/images/duhitz_miguel.jpeg", followers: 299)
+peace = User.create(full_name: "Peace Prosperity", username: "peace_and_prosperity", email: "peace@gmail.com", password: "prosperityroom", profile_pic: "/images/PeaceUserProfilePic.jpg", followers: 25000)
 #  = User.create(full_name: "", username: "", email: "", password_digest: "", profile_pic: "", followers: )
 
 puts '🌱 Seeding Challenges...'
 
-astoria_park = Challenge.create(image: "/challenges/AstoriaParkBridge.jpeg", location: "Astoria Park", latitude: 3987, longitude: 2853, hint: "Manhattan looks great from this view.", difficulty: 2)
-main_street = Challenge.create(image: "/challenges/MainStreet.jpeg", location: "Main St., Flushing", latitude: 2929, longitude: 4581, hint: "Food, Culture, and Books!", difficulty: 4)
-lic_library = Challenge.create(image: "/challenges/LICLibrary.jpeg", location: "Gantry Plaza State Park", latitude: 4425, longitude: 2968, hint: "Might need a restroom break first...", difficulty: 1)
-pepsi_cola = Challenge.create(image: "/challenges/PepsiCola.jpeg", location: "Gantry Plaza State Park", latitude: 5055, longitude: 2954, hint: "A refreshing drink for a beautiful day.", difficulty: 5)
+astoria_park = Challenge.create(image: "/images/challenges/AstoriaParkBridge.jpeg", location: "Astoria Park", latitude: 3987, longitude: 2853, hint: "Manhattan looks great from this view.", difficulty: 2)
+main_street = Challenge.create(image: "/images/challenges/MainStreet.jpeg", location: "Main St., Flushing", latitude: 2929, longitude: 4581, hint: "Food, Culture, and Books!", difficulty: 4)
+lic_library = Challenge.create(image: "/images/challenges/LICLibrary.jpeg", location: "Gantry Plaza State Park", latitude: 4425, longitude: 2968, hint: "Might need a restroom break first...", difficulty: 1)
+pepsi_cola = Challenge.create(image: "/images/challenges/PepsiCola.jpeg", location: "Gantry Plaza State Park", latitude: 5055, longitude: 2954, hint: "A refreshing drink for a beautiful day.", difficulty: 5)
+
+puts '🌱 Seeding Posts...'
+
+p1 = Post.create(image: "/images/userPosts/AstoriaPark_Peace_User.jpeg", date: 20220501, user_id: peace.id, challenge_id: astoria_park.id)
+p2 = Post.create(image: "/images/userPosts/PepsiCola_duhitz_Miguel.jpeg", date: 20220501, user_id: miguel.id, challenge_id: pepsi_cola.id)
+p3 = Post.create(image: "/images/userPosts/MainSt_duhitz_Miguel.jpeg", date: 20220501, user_id: miguel.id, challenge_id: main_street.id)
+# p4 = Post.create(image: "", date: , user_id: , challenge_id: )
+# p5 = Post.create(image: "", date: , user_id: , challenge_id: )
 
 puts '🌱 Seeding Done...'
